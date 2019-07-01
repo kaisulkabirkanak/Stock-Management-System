@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StockManagementSystem
 {
-    public partial class Stockout : Form
+    public partial class StockOut : Form
     {
-        public Stockout()
+        public StockOut()
         {
             InitializeComponent();
         }

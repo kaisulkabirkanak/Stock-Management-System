@@ -44,13 +44,13 @@ namespace StockManagementSystem
 
         private void stockInToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Stockin stockin = new Stockin();
+            StockIn stockin = new StockIn();
             stockin.Show();
         }
 
         private void stockOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Stockout stockout = new Stockout();
+            StockOut stockout = new StockOut();
             stockout.Show();
         }
 

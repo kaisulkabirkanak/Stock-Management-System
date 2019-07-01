@@ -46,75 +46,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs">
+    <Compile Include="Model\CatagorySetup.cs" />
+    <Compile Include="Model\CompanySetup.cs" />
+    <Compile Include="Model\ItemSetup.cs" />
+    <Compile Include="Model\StockIn.cs" />
+    <Compile Include="UI\Category.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Category.Designer.cs">
+    <Compile Include="UI\Category.Designer.cs">
       <DependentUpon>Category.cs</DependentUpon>
     </Compile>
-    <Compile Include="Company.cs">
+    <Compile Include="UI\Company.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Company.Designer.cs">
+    <Compile Include="UI\Company.Designer.cs">
       <DependentUpon>Company.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dates.cs">
+    <Compile Include="UI\BetweenTwoDates.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dates.Designer.cs">
-      <DependentUpon>Dates.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Item.cs">
+    <Compile Include="UI\.Designer.cs">
+      <DependentUpon>BetweenTwoDates.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Item.Designer.cs">
+    <Compile Include="UI\Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Item.Designer.cs">
       <DependentUpon>Item.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.cs">
+    <Compile Include="UI\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogIn.Designer.cs">
+    <Compile Include="UI\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Searchview.cs">
+    <Compile Include="UI\Searchview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Searchview.Designer.cs">
+    <Compile Include="UI\Searchview.Designer.cs">
       <DependentUpon>Searchview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Stockin.cs">
+    <Compile Include="UI\StockIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stockin.Designer.cs">
-      <DependentUpon>Stockin.cs</DependentUpon>
+    <Compile Include="UI\StockIn.Designer.cs">
+      <DependentUpon>StockIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="StockMain.cs">
+    <Compile Include="UI\StockMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StockMain.Designer.cs">
+    <Compile Include="UI\StockMain.Designer.cs">
       <DependentUpon>StockMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Stockout.cs">
+    <Compile Include="UI\StockOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stockout.Designer.cs">
-      <DependentUpon>Stockout.cs</DependentUpon>
+    <Compile Include="UI\StockOut.Designer.cs">
+      <DependentUpon>StockOut.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Category.resx">
+    <EmbeddedResource Include="UI\Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Company.resx">
+    <EmbeddedResource Include="UI\Company.resx">
       <DependentUpon>Company.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dates.resx">
-      <DependentUpon>Dates.cs</DependentUpon>
+    <EmbeddedResource Include="UI\BetweenTwoDates.resx">
+      <DependentUpon>BetweenTwoDates.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Item.resx">
+    <EmbeddedResource Include="UI\Item.resx">
       <DependentUpon>Item.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogIn.resx">
+    <EmbeddedResource Include="UI\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -126,17 +131,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Searchview.resx">
+    <EmbeddedResource Include="UI\Searchview.resx">
       <DependentUpon>Searchview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stockin.resx">
-      <DependentUpon>Stockin.cs</DependentUpon>
+    <EmbeddedResource Include="UI\StockIn.resx">
+      <DependentUpon>StockIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StockMain.resx">
+    <EmbeddedResource Include="UI\StockMain.resx">
       <DependentUpon>StockMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stockout.resx">
-      <DependentUpon>Stockout.cs</DependentUpon>
+    <EmbeddedResource Include="UI\StockOut.resx">
+      <DependentUpon>StockOut.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -151,5 +156,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
