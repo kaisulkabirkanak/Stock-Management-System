@@ -52,6 +52,7 @@
             this.SaveButton.TabIndex = 17;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // CategoryComboBox
             // 
@@ -111,7 +112,7 @@
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Category";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ItemComboBox
             // 
@@ -161,7 +162,7 @@
             this.ShowRichTextBox.TabIndex = 23;
             this.ShowRichTextBox.Text = "";
             // 
-            // Stockin
+            // StockIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,8 +181,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Stockin";
-            this.Text = "Stockin";
+            this.Name = "StockIn";
+            this.Text = "Stock In";
             this.ResumeLayout(false);
             this.PerformLayout();
 

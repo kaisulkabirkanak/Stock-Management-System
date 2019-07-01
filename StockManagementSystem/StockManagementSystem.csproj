@@ -46,10 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\CatagorySetupManager.cs" />
+    <Compile Include="BLL\CompanySetupManager.cs" />
+    <Compile Include="BLL\ItemSetupManager.cs" />
+    <Compile Include="BLL\StockInManager.cs" />
     <Compile Include="Model\CatagorySetup.cs" />
     <Compile Include="Model\CompanySetup.cs" />
     <Compile Include="Model\ItemSetup.cs" />
     <Compile Include="Model\StockIn.cs" />
+    <Compile Include="Repository\CategorySetupRepository.cs" />
+    <Compile Include="Repository\CompanySetupRepository.cs" />
+    <Compile Include="Repository\ItemSetupRepository.cs" />
+    <Compile Include="Repository\StockInRepository.cs" />
     <Compile Include="UI\Category.cs">
       <SubType>Form</SubType>
     </Compile>

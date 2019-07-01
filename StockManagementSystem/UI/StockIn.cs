@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StockManagementSystem.Model;
 
 namespace StockManagementSystem
 {
@@ -16,9 +17,31 @@ namespace StockManagementSystem
         {
             InitializeComponent();
         }
+       
 
-        private void label1_Click(object sender, EventArgs e)
+        
+      
+
+        private void SaveButton_Click(object sender, EventArgs e)
         {
+            try
+            {
+                StockIn insGet = new StockIn();
+                insGet.ComapanyName =CompanyComboBox.Text;
+                insGet.CategoryName = CategoryComboBox.Text;
+                insGet.Item = ItemComboBox.Text;
+                insGet.ReorderLavel = ReorderTextBox.Text;
+                insGet.StockInQuantity = StockTextBox.Text;
+                insGet.AvailableQuantity = AvailableTextBox.Text;
+
+                StockInManager manager = new StockInManager();
+                bool chk = manager.Insert(insGet);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }
